@@ -35,7 +35,7 @@ class TotalPoints(PointsForPlace, PointsForMeters):
         if points_place is None or points_meters is None:
             print("Некорректные входные данные.")
             return None
-        return points
+        return points_place + points_meters
 
 
 points_for_place = PointsForPlace()
